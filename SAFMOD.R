@@ -3,7 +3,6 @@
 ########################################################################################################
 rm(list=ls())
 require("Rglpk") # Rglpk is the package for solving the mixed integer model
-require("Rsymphony")
 require("pracma")
 
 #==================WORKING DIRECTORY ===================================================================
