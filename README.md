@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/kwadjoahodo/SAFMOD/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+farmSoil <- function(soil){
+  # This function sets the soil type for the model. The soil type influences
+  # the fertiliser amounts, which in turn influence crop yields, gross margin,
+  # variable costs, profits. 
+  # The soil type also influences the workable hours which 
+  # in turn affect machine/labour selection.
+  # Takes soil type and returns new farm inputs
+  
+  soi <- c(0.5,0.75,1,1.25,1.5,1.75,2,2.25,2.5)
+  so <- Files()[[3]]
+  
+  if(soil%in%soi==TRUE){
+    so$Value[[2]] <- soil 
+    
+  }else{
+    so$Value[[2]] <- 2.5 # This sets the soil type to heavy soil (Clay)
+    #newso <- so
+    warning("Enter correct soil type: must be between 0.5 and 2.5 at an interval of 0.25")
+  }
+  
+  
+  newso <- so
+  
+  #setwd("~/Google Drive/SAFMOD/Mod_Data")
+  #write.table(newso,file="Farm_location.csv",row.names=FALSE,sep=",")
+  
+  kk <- newso
+  
+  kk
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kwadjoahodo/SAFMOD/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#=========================================================================================================
+##
