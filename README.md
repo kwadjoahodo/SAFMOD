@@ -49,4 +49,4 @@ Deviation estimates are also stored in the file, "Crop_input_output.csv".
 
 The soil type and the rainfall amount are then used to detrmine the Workable Hours in each of the two-week periods into which
 the cropping season has been divided.The estimated Workable Hours for the 26 two-week periods are then stored in the file, 
-"Workable_hours.csv".
+"Workable_hours.csv". 
