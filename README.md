@@ -149,9 +149,9 @@ The relative economic factors (fuel price, interest rate and inflation can be se
 
 ** Set rotation **
 The crop rotation approach can be set using the function 'setRotation'. The function set the rotation based crop 
-proportions (Individual crop constraint)rotation = "absolute" means model uses absolute percent of total crop area
-  # rotation = "proportional" means model uses proporions on terms of which crop
-  # gives permission to the next crop
+proportions (Individual crop constraint). 
+  # rotation = "absolute" means model uses absolute percent of total crop area
+  # rotation = "proportional" means model uses proporions on terms of which crop gives permission to the next crop
   # rotation = "none" means no individual crop constraint
   # To change the rotation this functions needs to be used.
 
