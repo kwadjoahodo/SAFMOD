@@ -125,8 +125,11 @@ a monocropping scenario.
 
 ** Solving models **
 The pure profit model, nitrated leaching model, risk model, the goal-programming model and the overall SAFMOD model are 
-solved using the functions 'solveProfitMod','solveProfitMod','solveProfitMod','solveProfitMod',
-'solveProfitMod' respectively.
+solved using the functions 'solveProfitMod','solveNleachMod','solveRiskMod','solveGoalProg',
+'solveSAFMOD' respectively. Different information and features with of the different models can be found their respective 
+functions.
+
+
 
 
 
