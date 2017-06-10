@@ -4271,16 +4271,16 @@ kg1 <- solveGoalProgMod(area=aa[3],wP,wN,wR,profit_Target,nleach_Target,risk_Tar
 kg1
 
 
+###### MODEL RUN FOR FARM UNDER LEVELS OF BLACK-GRASS INFESTATIONS ====
 
-#percent <- seq(0,100,10) #seq(40,50,0.1)
-#percent <- c(0,100)
+# The percent though a misnormer is a vector which contains the indices for the rows of the farm
+# data feed into the varySpringCrop function to run the model for each farm
+
 percent <- seq(1,length(bg[,1]))
-#set.seed(100)
-#percent <- seq(1,10) #sort(sample(1:745,10))
-#percent <- seq(1,2)
 
 varySpringCrop <- function(proportion=percent){
-  
+ # This function is used to run the model for each of the selected 745 farms
+ # It was created and set for each level of infestation
   
   soi <- Files()[[14]][-1][[1]]
   rai <- Files()[[14]][-1][[2]]
@@ -4439,8 +4439,6 @@ varySpringCrop <- function(proportion=percent){
 }
 
 sp <- varySpringCrop()
-
-
 
 #percent <- c(0,100)
 percent <- seq(1,length(bg[,1]))
