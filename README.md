@@ -103,7 +103,30 @@ The model display of crop rotation matrix, crop areas and machine/labour numbers
 'cropRotation', 'cropAreas' and 'machineLabour'.
 
 ** Periodic workable hours matrix **
-The matric assigning workable hours to periods with respect to operations is created using the function
+The matric assigning workable hours to periods with respect to operations is created using the function 'workerMatrix'
+and stored in the file "Workers.csv".
+
+** Model constraint matrix **
+All the constraint matrices are put together by the function 'consMatrix' and stored in the file "Cons_Matrix.csv".
+
+** Objective funtions **
+The objective function for profit maximisation, nitrate leaching minimisation and risk minimisation are created 
+by the functions 'objFun1', 'objFun2' and 'objFun3'.
+
+** The right hand side (RHS) vector **
+The RHS vector is created using the function 'modRHS' and stored in the file "RHS.csv".
+
+** Constraint directions vector **
+The vector for constraint direction (e.g. <=, = or >=) is created by the function 'varDir' and stored in the file "DIR.csv".
+
+** All matrices and vectors **
+Model matrices and vectors are put together by the function 'module1'. It also ensures the that the model is run for 
+a monocropping scenario.
+
+** Solving models **
+The pure profit model, nitrated leaching model, risk model, the goal-programming model and the overall SAFMOD model are 
+solved using the functions 'solveProfitMod','solveProfitMod','solveProfitMod','solveProfitMod',
+'solveProfitMod' respectively.
 
 
 
