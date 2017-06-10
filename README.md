@@ -152,10 +152,3 @@ The relative economic factors (fuel price, interest rate and inflation can be se
 ** Set rotation **
 The crop rotation approach can be set or changed using the function 'setRotation'. The function set the rotation based crop 
 proportions (Individual crop constraint). Rotation = "absolute" means model uses absolute percent of total crop area.  Rotation = "proportional" means model uses proporions on terms of which crop gives permission to the next crop. Rotation = "none" means no individual crop constraint. 
-
-
-** MODEL VALIDATION 
-The codes for the validation chapter are similar to the codes for the default model except that for the validation, the model was run using farm data on soil type, rainfall, crop yield and farm areas. As a result, estimation of gross margin and yield penalties were based on the farm yield data from the FBS data. Workable hours were estimated based on farm soil and rainfall data. The comparison of model generated results were compared with observed data and the statistics measure of association were estimated using the function ValStats (Line 3640).
-
-
-
