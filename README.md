@@ -129,6 +129,37 @@ solved using the functions 'solveProfitMod','solveNleachMod','solveRiskMod','sol
 'solveSAFMOD' respectively. Different information and features with of the different models can be found their respective 
 functions.
 
+** Parameter variations **
+The factors for varying model parameters are stored in the file "Relative_change.csv".
+** Set soil type and rainfall **
+The soil type and rainfall can be set using the function 'setFarmSoilRain'.
+
+** Set relative input and output amounts **
+The relative crop input and output amounts can be set using the function 'setInputOutputAmount'.
+
+** Monocropping scenario **
+The models can be set to run for a mono-cropping scenario using the function 'setMonoCropping'.
+
+** Set relative farm area **
+The relative farm area can be set using the function 'setFarmArea'.
+
+** Set relative economic factors **
+The relative economic factors (fuel price, interest rate and inflation can be set using the function 
+'setEconomicFactors'.
+
+** Set rotation **
+The crop rotation approach can be set using the function 'setRotation'. The function set the rotation based crop 
+proportions (Individual crop constraint)rotation = "absolute" means model uses absolute percent of total crop area
+  # rotation = "proportional" means model uses proporions on terms of which crop
+  # gives permission to the next crop
+  # rotation = "none" means no individual crop constraint
+  # To change the rotation this functions needs to be used.
+
+
+
+
+
+
 
 
 
