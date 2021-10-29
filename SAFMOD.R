@@ -1,6 +1,9 @@
 #*******************************************************************************************************
 #****************************** SHEFFIELD ARABLE FARM MODEL (SAFMOD) ***********************************
 #*******************************************************************************************************
+
+# Model developed and codes written by Kwadjo Ahodo 
+
 rm(list=ls())
 require("Rglpk") # The solver used to solve the mixed-integer model
 require("pracma")
