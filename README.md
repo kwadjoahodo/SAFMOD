@@ -1,6 +1,6 @@
 ******************************** SHEFFIELD ARABLE FARM MODEL (SAFMOD) **********************************
 
-SAFMOD is an arable farm level model, which consist of four modules: profit maximisation, nitrate leaching and 
+SAFMOD is an arable farm level model, which consists of four modules: profit maximisation, nitrate leaching and 
 risk minimisation models. The model combines mixed-integer, risk (MOTAD) and weighted goal programming approaches
 to optimise three arable farming objectives: profit, nitrate leaching and risk subject to the following constraints:
 
